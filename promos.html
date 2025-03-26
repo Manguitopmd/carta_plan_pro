@@ -1,0 +1,55 @@
+<section id="promos" class="p-4 min-h-screen" style="background: linear-gradient(to bottom, var(--menu-dia-bg-start), var(--menu-dia-bg-end));">
+    <h2 class="text-4xl font-extrabold mb-8 text-center drop-shadow-lg animate-pulse" style="color: var(--menu-dia-text);">¡Promos Imperdibles!</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Combo Personal Criollo -->
+        <div class="relative card-bg rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-300 animate-bounce-in bg-white" style="border-color: var(--menu-dia-border);">
+            <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">¡Oferta Especial!</span>
+            <span class="absolute top-2 left-2 text-yellow-400 text-2xl"><i class="fas fa-star"></i></span>
+            <img src="assets/promos/combo_criollo_personal.jpg" alt="Combo Personal Criollo" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold" style="color: var(--menu-dia-text);">🍲 Combo Personal Criollo</h3>
+                <p class="price-text font-extrabold mt-2 text-3xl">S/ 45.00 <span class="line-through text-gray-500 text-lg">S/ 70.00</span></p>
+                <p class="text-sm mt-2 text-gray-700">Cabrito con frejoles + yucas fritas + gaseosa 500 ml.</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Combo Personal Criollo" data-price="45.00">
+                    <input type="text" placeholder="Comentario (ej: sin frejoles)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Combo Marino -->
+        <div class="relative card-bg rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-300 animate-bounce-in bg-white" style="border-color: var(--menu-dia-border);">
+            <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">¡25% Off!</span>
+            <span class="absolute top-2 left-2 text-yellow-400 text-2xl"><i class="fas fa-star"></i></span>
+            <img src="assets/promos/duo.jpg" alt="Combo Marino" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold" style="color: var(--menu-dia-text);">🐟 Combo Marino</h3>
+                <p class="price-text font-extrabold mt-2 text-3xl">S/ 35.00 <span class="line-through text-gray-500 text-lg">S/ 47.00</span></p>
+                <p class="text-sm mt-2 text-gray-700">Ceviche del día + Chicharrón de pescado + 1 gaseosa.</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Combo Marino" data-price="35.00">
+                    <input type="text" placeholder="Comentario (ej: poco picante)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Combo Rápido -->
+        <div class="relative card-bg rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-300 animate-bounce-in bg-white" style="border-color: var(--menu-dia-border);">
+            <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">¡Solo hoy!</span>
+            <span class="absolute top-2 left-2 text-yellow-400 text-2xl"><i class="fas fa-star"></i></span>
+            <img src="assets/promos/ceviche.jpg" alt="Combo Rápido" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold" style="color: var(--menu-dia-text);">🍗 Combo Rápido</h3>
+                <p class="price-text font-extrabold mt-2 text-3xl">S/ 10.00 <span class="line-through text-gray-500 text-lg">S/ 18.00</span></p>
+                <p class="text-sm mt-2 text-gray-700">Combo Ceviche a Paso!</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Combo Rápido" data-price="10.00">
+                    <input type="text" placeholder="Comentario (ej: con tostadas)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+<section id="menu-dia" class="p-4 min-h-screen" style="background: linear-gradient(to bottom, var(--menu-dia-bg-start), var(--menu-dia-bg-end));">
+    <h2 class="text-4xl font-extrabold mb-8 text-center drop-shadow-lg" style="color: var(--menu-dia-text);">Menú del Día - ¡Solo Hoy!</h2>
+    <div class="max-w-3xl mx-auto card-bg rounded-xl shadow-2xl p-8 animate-slide-up bg-white relative" style="border-color: var(--menu-dia-border);">
+        <!-- Ícono del reloj centrado en un elipse -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full border-4 flex items-center justify-center" style="border-color: var(--menu-dia-border); width: 60px; height: 60px;">
+            <span class="text-3xl" style="color: var(--menu-dia-text);"><i class="fas fa-clock"></i></span>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 mt-8 text-center" style="color: var(--menu-dia-text);">Hoy nuestro Menú del Día es:</h3>
+        <div class="space-y-6">
+            <div>
+                <p class="font-semibold text-lg text-gray-800">Entrada:</p>
+                <p class="text-gray-700">Sopa / Causa rellena / Tequeños</p>
+            </div>
+            <div>
+                <p class="font-semibold text-lg text-gray-800">Segundo:</p>
+                <p class="text-gray-700">Lomito saltado / Monfonguito a la italiana / Pollo apanado</p>
+            </div>
+            <div>
+                <p class="font-semibold text-lg text-gray-800">Bebida:</p>
+                <p class="text-gray-700">Jugo de maracuyá</p>
+            </div>
+        </div>
+        <p class="price-text font-extrabold text-4xl mt-6 text-center animate-pulse">S/ 12.00</p>
+        <button class="mt-6 menu-dia-button text-white px-8 py-3 rounded-full font-semibold transition duration-200 w-full" onclick="openMenuDiaModal()">Comprar</button>
+    </div>
+</section>
+
+<!-- Modal para selección del Menú del Día -->
+<div id="menu-dia-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-20">
+    <div class="bg-white p-6 rounded-lg max-w-md w-full">
+        <h3 class="text-2xl font-bold mb-4" style="color: var(--menu-dia-text);">Arma tu Menú del Día</h3>
+        <div class="space-y-4">
+            <div>
+                <label class="font-semibold">Entrada:</label>
+                <select class="w-full p-2 border rounded" id="menu-dia-entrada">
+                    <option value="Sopa">Sopa</option>
+                    <option value="Causa rellena">Causa rellena</option>
+                    <option value="Tequeños">Tequeños</option>
+                </select>
+            </div>
+            <div>
+                <label class="font-semibold">Segundo:</label>
+                <select class="w-full p-2 border rounded" id="menu-dia-segundo">
+                    <option value="Lomito saltado">Lomito saltado</option>
+                    <option value="Monfonguito a la italiana">Monfonguito a la italiana</option>
+                    <option value="Pollo apanado">Pollo apanado</option>
+                </select>
+            </div>
+            <div>
+                <label class="font-semibold">Cantidad:</label>
+                <input type="number" min="1" value="1" class="w-full p-2 border rounded" id="menu-dia-quantity">
+            </div>
+            <div>
+                <label class="font-semibold">Comentario:</label>
+                <input type="text" placeholder="Ej: con poco ají" class="w-full p-2 border rounded" id="menu-dia-comment">
+            </div>
+        </div>
+        <button class="mt-6 button-bg text-white px-4 py-2 rounded w-full" onclick="addMenuDiaToCart()">Agregar al carrito</button>
+        <button class="mt-2 text-gray-600 underline" onclick="closeMenuDiaModal()">Cancelar</button>
+    </div>
+</div>

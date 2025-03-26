@@ -1,0 +1,130 @@
+/* Variables de color personalizables */
+:root {
+    --primary-bg: #f3f4f6; /* Fondo principal (bg-gray-100) */
+    --header-bg: #7f1d1d; /* Fondo del header y footer (bg-red-900) */
+    --text-primary: #1f2937; /* Texto principal (text-gray-800) */
+    --text-secondary: #4b5563; /* Texto secundario (text-gray-700) */
+    --text-accent: #fcd34d; /* Texto de acento (text-amber-300) */
+    --button-bg: #f97316; /* Fondo de botones "Ver más" (bg-orange-500) */
+    --button-hover: #ea580c; /* Hover de botones "Ver más" (bg-orange-600) */
+    --price-text: #ea580c; /* Texto de precios (text-orange-600) */
+    --card-bg: #ffffff; /* Fondo de tarjetas (bg-white) */
+    --whatsapp-bg: #16a34a; /* Fondo de WhatsApp (bg-green-600) */
+    --whatsapp-hover: #15803d; /* Hover de WhatsApp (bg-green-700) */
+    --highlight-bg: #fef3c7; /* Fondo de destaque (bg-amber-100) */
+    --map-button-bg: #3b82f6; /* Fondo del botón de mapa (bg-blue-500) */
+    --map-button-hover: #2563eb; /* Hover del botón de mapa (bg-blue-600) */
+    /* Nuevas variables para Menú del Día */
+    --menu-dia-bg-start: #fecaca; /* Inicio degradado (red-200) */
+    --menu-dia-bg-end: #fed7aa; /* Fin degradado (orange-200) */
+    --menu-dia-border: #f87171; /* Borde (red-400) */
+    --menu-dia-text: #7f1d1d; /* Texto principal (red-900, coincide con header) */
+    --menu-dia-button-bg: #ef4444; /* Botón (red-500) */
+    --menu-dia-button-hover: #dc2626; /* Hover botón (red-600) */
+}
+
+/* Aplicar variables */
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-secondary);
+}
+
+nav {
+    background-color: var(--header-bg);
+    color: white;
+}
+
+h1, h2, h3 {
+    color: var(--text-primary);
+}
+
+.text-accent {
+    color: var(--text-accent);
+}
+
+.button-bg {
+    background-color: var(--button-bg);
+}
+
+.button-bg:hover {
+    background-color: var(--button-hover);
+}
+
+.price-text {
+    color: var(--price-text);
+}
+
+.card-bg {
+    background-color: var(--card-bg);
+}
+
+.whatsapp-bg {
+    background-color: var(--whatsapp-bg);
+}
+
+.whatsapp-bg:hover {
+    background-color: var(--whatsapp-hover);
+}
+
+.highlight-bg {
+    background-color: var(--highlight-bg);
+}
+
+.map-button-bg {
+    background-color: var(--map-button-bg);
+}
+
+.map-button-bg:hover {
+    background-color: var(--map-button-hover);
+}
+
+/* Estilos específicos para Menú del Día */
+#menu-dia {
+    background: linear-gradient(to bottom, var(--menu-dia-bg-start), var(--menu-dia-bg-end));
+}
+
+#menu-dia h2 {
+    color: var(--menu-dia-text);
+}
+
+#menu-dia .card-bg {
+    border-color: var(--menu-dia-border);
+}
+
+#menu-dia .menu-dia-button {
+    background-color: var(--menu-dia-button-bg);
+}
+
+#menu-dia .menu-dia-button:hover {
+    background-color: var(--menu-dia-button-hover);
+}
+
+/* Animaciones */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.6s ease-out forwards;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}

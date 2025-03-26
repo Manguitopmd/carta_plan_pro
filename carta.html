@@ -1,0 +1,152 @@
+<section id="carta" class="p-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">Platos a la Carta</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Caldo de Gallina -->
+        <section id="carta" class="p-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">Platos a la Carta</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Caldo de Gallina -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/caldogallina.jpg" alt="Caldo de Gallina" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🍲 Caldo de Gallina</h3>
+                <p class="price-text font-bold mt-2">S/ 15.00</p>
+                <p class="text-sm mt-1">Un clásico reconfortante, con su caldito dorado...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Caldo de Gallina" data-price="15.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Caldo de Pata de Res -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/caldopata.jpg" alt="Caldo de Pata de Res" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🍲 Caldo de Pata de Res</h3>
+                <p class="price-text font-bold mt-2">S/ 18.00</p>
+                <p class="text-sm mt-1">Potente y nutritivo, con un caldito espeso...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Caldo de Pata de Res" data-price="18.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Caldo de Carnero -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/caldocarnero.jpg" alt="Caldo de Carnero" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🍲 Caldo de Carnero</h3>
+                <p class="price-text font-bold mt-2">S/ 20.00</p>
+                <p class="text-sm mt-1">Un elixir lleno de fuerza, con carne tierna...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Caldo de Carnero" data-price="20.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Pato -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/arrozpato.jpg" alt="Pato" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🍗 Pato</h3>
+                <p class="price-text font-bold mt-2">S/ 25.00</p>
+                <p class="text-sm mt-1">Jugoso y lleno de sabor, cocido a fuego lento...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Pato" data-price="25.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cabrito -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/arrozcabrito.jpg" alt="Cabrito" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🍖 Cabrito</h3>
+                <p class="price-text font-bold mt-2">S/ 25.00</p>
+                <p class="text-sm mt-1">Tierno, jugoso y cocido con todo el amor...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Cabrito" data-price="25.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cuy Guisado/Frito -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/cuy.jpg" alt="Cuy Guisado/Frito" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🐹 Cuy Guisado/Frito</h3>
+                <p class="price-text font-bold mt-2">S/ 30.00</p>
+                <p class="text-sm mt-1">Crujiente por fuera, suavecita la carne...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Cuy Guisado/Frito" data-price="30.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ceviche Pesca del Día -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/ceviche.jpg" alt="Ceviche Pesca del Día" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🐟 Ceviche Pesca del Día</h3>
+                <p class="price-text font-bold mt-2">S/ 25.00</p>
+                <p class="text-sm mt-1">Frescura y explosión de sabor en cada bocado...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Ceviche Pesca del Día" data-price="25.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Chicharrón Pesca del Día -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/chicharronpescado.jpg" alt="Chicharrón Pesca del Día" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🐟 Chicharrón Pesca del Día</h3>
+                <p class="price-text font-bold mt-2">S/ 25.00</p>
+                <p class="text-sm mt-1">Filetes de pescado bien doraditos y crocantes...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Chicharrón Pesca del Día" data-price="25.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Sudado Pesca del Día -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/sudadopescado.jpg" alt="Sudado Pesca del Día" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🐟 Sudado Pesca del Día</h3>
+                <p class="price-text font-bold mt-2">S/ 25.00</p>
+                <p class="text-sm mt-1">Pescado fresco nadando en un caldito lleno...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Sudado Pesca del Día" data-price="25.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Pescado Chita -->
+        <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-slide-up">
+            <img src="assets/carta/chitafrita.jpg" alt="Pescado Chita" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">🐟 Pescado Chita</h3>
+                <p class="price-text font-bold mt-2">S/ 35.00</p>
+                <p class="text-sm mt-1">Enterito y doradito, con esa piel crujiente...</p>
+                <div class="mt-4 space-y-2">
+                    <input type="number" min="1" value="1" class="quantity w-16 p-1 border rounded" data-item="Pescado Chita" data-price="35.00">
+                    <input type="text" placeholder="Comentario (ej: con poco ají)" class="comment w-full p-1 border rounded">
+                    <button class="button-bg text-white px-4 py-2 rounded w-full" onclick="addToCart(this.parentElement.querySelector('.quantity').dataset.item, this.previousElementSibling.previousElementSibling.value, this.previousElementSibling.value, parseFloat(this.parentElement.querySelector('.quantity').dataset.price))">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Resto de ítems aquí, replicar estructura -->
+    </div>
+</section>
